@@ -2,12 +2,15 @@
 <html>
   <head>
     <title>CSV Report Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
     <h1>CSV Report Generator</h1>
     <form id="CSV-Report" method="POST" action="http://localhost:3000">
-    <textarea type="text" name="csvData" rows="15" cols="50"></textarea>
-    <input type="submit" value="Submit">
+      <input type="file" id="csv" name="csvData" accept=".json">
+      <!-- <textarea type="text" name="csvData" rows="15" cols="50"></textarea> -->
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>

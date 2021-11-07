@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
       if(err) {
         throw err;
       }
-      console.log('file saved');
+      res.download(`./client/test${count}.csv`);
     });
   })
 })
